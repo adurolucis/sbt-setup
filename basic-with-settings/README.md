@@ -2,7 +2,10 @@ This is a basic build.sbt setup with the project settings specified a little bit
 
 It uses the ```lazy val``` way of creating a  project with settings
 
-Notice that there is a comma to separate the settings
+Notice that there is a comma to separate the settings, but
+**there cannot be blank lines between settings!!**
+
+It will generate a compiler error
 
 These properties can be viewed by running sbt, then once the prompt appears, typing 'name' or 'version'
 
