@@ -9,5 +9,19 @@ Example:
 libraryDependencies += "org.unitils.jodatime" % "unitils-jodatime" % "1.0.2"
 ```
 
+A 4th parameter can be used to specify the configuration in which the dependency is needed:
+
+```
+libraryDependencies += "org.unitils.jodatime" % "unitils-jodatime" % "1.0.2" % "test"
+```
+
+The list of default respositories that sbt uses (such as maven central) is stored in a key called
+```externalResolvers```.  To add a repo to the list that sbt will use, it should be added to the Key
+ ```resolvers```. The ```at``` method creates a resolver from two strings:
+
+ ```
+ resolvers += "<Repo Name>" at "<Repo URL>"
+ ```
+
 
 
